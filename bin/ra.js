@@ -8,8 +8,13 @@ const version = require('../package').version
 program
   .usage('<command> [options]')
   .version(version)
-  .command('init', chalk.green('初始化 rt-app 项目'))
-  .command('dev', chalk.green('启动调试服务器'))
-  .command('build', chalk.green('项目打包'))
+  .command('init', chalk.gray('初始化项目模板'))
+  .command('add', chalk.gray('生成项目模块'))
+  .command('server', chalk.gray('启动调试服务器'))
+  .command('build', chalk.gray('项目编译打包'))
+  .command('validate', chalk.gray('验证项目模块规范'))
+  .command('plugin', chalk.gray('生成支持的插件'))
+  .command('upgrade', chalk.gray('升级 CLI 工具'))
+  .command('test', chalk.gray('项目送测'))
   .parse(process.argv)
 
