@@ -1,60 +1,95 @@
 # ralltiir-application-cli
-The official command line interface (CLI) for Ralltiir Application
 
-## 使用指南
+> The official command line interface (CLI) for Ralltiir Application.
 
-初始化项目模板
+## Documentation
+
+## Usage
+
+### Prerequisites
+
+Node vx.x (or greater) and npm x.x.
+
+### Installation
+
+Currently, there's no `npm` package so to install, you have to clone the repository locally:
+
+`git clone https://github.com/Ralltiir/ralltiir-application-cli.git && cd ralltiir-application-cli && npm install && npm link`
+
+### Usage
+
+> Init project template
 
 ``` bash
-# 快速新建一个项目模板
+# create a project template fastly
 $ ra init
 ```
 
-生成项目模块
+> Create project module
 
 ``` bash
-# 新建一个带有默认配置的项目模块
-$ ra add xxx
+# create a project module with default configure
+$ ra add rt-app-demo-module
 ```
 
-启动调试服务器
+> Start debug server
 
 ``` bash
-# 本地启动调试服务器进行线下预览
+# start debug server locally for offline preview
 $ ra server
 ```
 
-项目编译打包
+> Project compile and package
 
 ``` bash
-# 在 output 目录进行构建输出
-$ ra build xxx
+# build and output in `output` directory
+$ ra build rt-app-demo
 ```
 
-验证项目模块规范
+> Verification project module specification
 
 ``` bash
-# 按照规范给出修改建议
-$ ra validate xxx
+# suggestions for revision according to the specification
+$ ra validate rt-app-demo-module
 ```
 
-生成支持的插件
+> Create supported plugin
 
 ``` bash
-# 新建一个功能支持插件
-$ ra plugin xxx
+# create a new feature support plugin
+$ ra plugin rt-app-demo-plugin
 ```
 
-升级 CLI 工具
+> Project unit test
 
 ``` bash
-# 升级工具至默认的最新版本
+# unit testing
+$ ra test rt-app-demo
+```
+
+> Upgrade CLI tool
+
+``` bash
+# upgrade tool to the latest version
 $ ra upgrade
 ```
 
-项目送测
+## Contributing
 
-``` bash
-# 按照 git 工作流对本次修改进行送测
-$ ra test
-```
+
+
+## License
+
+[MIT](https://github.com/Ralltiir/ralltiir-application-cli/blob/master/LICENSE)
+
+## Todo
+
+- [x] Init project template, high
+- [ ] Create project module, high
+- [ ] Start debug server, high
+- [ ] Project compile and package, high
+- [ ] Verification project module specification, middle
+- [ ] Create supported plugin, middle
+- [ ] Project unit test, middle
+- [ ] Upgrade CLI tool, middle
+
