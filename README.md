@@ -21,88 +21,88 @@ Currently, there's no `npm` package so to install, you have to clone the reposit
 > Init project template
 
 ``` bash
-# 快速初始化一个项目模板
+# initialize a project template quickly
 $ ra init
-# 强制初始化, -f, --force
+# forced initialize, -f, --force
 $ ra init -f
 ```
 
 > Create project module
 
 ``` bash
-# 新建一个带有默认配置的项目模块
+# create a new project module with default configuration
 $ ra add rt-app-demo-module
-# 强制覆盖项目模块, -f, --force
+# forced coverage project module, -f, --force
 $ ra add rt-app-demo-module -f
 ```
 
 > Start debug server
 
 ``` bash
-# 启动本地调试服务器用于项目预览
+# start the local debug server for project preview
 $ ra server
-# 清除缓存, -c, --clean
+# clear cache, -c, --clean
 $ ra server -c
-# 指定启动端口号, -p, --port
+# specify the startup port, -p, --port
 $ ra server -p 8080
-# 指定项目文件夹路径, -d, --dir
+# specify the project folder path, -d, --dir
 $ ra server -d './'
-# 启动调试自动刷新, -l, --livereload
+# start debugging auto refresh, -l, --livereload
 $ ra server -l
-# 指定静态资源公共路径, -a, --asset
+# specify a static resource public path, -a, --asset
 $ ra server -a '/static/'
-# 自动打开浏览器窗口, -o, --open
+# open a browser window automatically, -o, --open
 $ ra server -o
-# 指定配置文件路径, -s, --setting
+# specify the configuration file path, -s, --setting
 $ ra server -s './'
 ```
 
 > Project compile and package
 
 ``` bash
-# 编译和输出代码到默认路径
+# compile and output code to the default path
 $ ra build rt-app-demo
-# 指定静态资源公共路径, -a, --asset
+# specify a static resource public path, -a, --asset
 $ ra build -a '/static/'
-# 指定项目文件夹路径, -d, --dir
+# specify the project folder path, -d, --dir
 $ ra build -d './'
-# 指定编译代码输出路径, -o, --output
+# specify the compiled code output path, -o, --output
 $ ra build -o './'
-# 构建前先清空输出路径, -c, --clean
+# empty the output path before building, -c, --clean
 $ ra build -c
-# 指定 NODE_ENV 环境变量, -e, --env
+# specify NODE_ENV environmental variation, -e, --env
 $ ra build -e 'production'
 ```
 
 > Verification project module specification
 
 ``` bash
-# 进行代码规范校验
+# code specification verification
 $ ra validate rt-app-demo-module
-# 忽略代码规范校验, -i, --ignore
+# ignore code specification verification, -i, --ignore
 $ ra validate -i rt-app-demo-module
 ```
 
 > Create supported plugin
 
 ``` bash
-# 新建一个功能支持插件
+# create a new feature support plugin
 $ ra plugin rt-app-demo-plugin
 ```
 
 > Project unit test
 
 ``` bash
-# 进行单元测试
+# unit testing
 $ ra test rt-app-demo
 ```
 
 > Upgrade CLI tool
 
 ``` bash
-# 升级至最新版本
+# upgrade to the latest version
 $ ra upgrade
-# 指定升级版本, -v, --version
+# upgrade to the specified version, -v, --version
 $ ra upgrade -v @0.0.1
 ```
 
